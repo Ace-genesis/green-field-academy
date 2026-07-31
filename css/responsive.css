@@ -47,7 +47,7 @@
         position: fixed;
         right: 0;
         top: 4rem;
-        width: 300px;
+        width: 250px;
         height: calc(100dvh - 4rem);
         z-index: 200;
         background-color: var(--light-background);
@@ -62,7 +62,7 @@
         flex-direction: column;
         position: fixed;
         top: 6rem;   
-        right: 5rem;
+        right: 4rem;
         transform: translateX(15rem);
         transition: .3s ease-in-out;
         z-index: 300;
@@ -78,7 +78,7 @@
         transform: translateX(15rem);
         position: fixed;
         bottom: 10rem;
-        right: 3.5rem;
+        right: 2.5rem;
         transition: .3s ease-in-out;
         z-index: 300;
         
@@ -132,7 +132,45 @@
     }
 
     .hamburger{
-        right: 0;
+        right: 20px;
+    }
+    
+    /*=================
+       HERO SECTION
+    ====================*/
+    
+    .hero{
+      background: linear-gradient(to right, rgba(0,0,0,.6),rgba(0, 0, 0, .6)),
+ url(/assets/images/ChatGPT\ Image\ Jul\ 31\,\ 2026\,\ 09_29_46\ PM.png);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .badge{
+      font-size: .5rem;
+    }
+    
+    .hero-text-container{
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+    }
+    
+    .hero-heading{
+      font-size: 1.8rem;
+      line-height: 1.1;
+    }
+    
+    .supporting-text{
+      font-size: 1rem;
+    }
+    
+    .hero-btn-container{
+      gap: 2rem;
+    }
+    
+    .cta-btn{
+      font-size: .8rem;
     }
     
  }
