@@ -3,7 +3,7 @@
  url(/assets/images/ChatGPT\ Image\ Jul\ 31\,\ 2026\,\ 09_29_46\ PM.png);
     background-position: center;
     background-size: cover;
-    height: calc(100dvh - 5rem);
+    min-height: calc(100dvh - 5rem);
     display: flex;
     position: relative;
     
@@ -12,12 +12,13 @@
 .badge{
     background-color: var(--primary-color);
     color: white;
-    position: absolute;
     border-radius: 999px;
     padding: .8rem 1.2rem;
     font-weight: 700;
-    top: 2rem;
-    font-size: .8rem;
+    max-width: 150px;
+    width: 100%;
+    font-size: clamp(.5rem, 2vw, .8rem);
+    margin-bottom: 2rem;
 }
 
 .hero-wrapper{
@@ -31,13 +32,14 @@
 }
 
 .hero-heading{
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    line-height: 1.15;
     font-weight: 800;
     color: var(--accent-color)
 }
 
 .supporting-text{
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 4vw, 1.2rem);
     color: white;
 }
 
@@ -47,14 +49,15 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 2rem;
-    gap: 4rem;
+    gap: clamp(2rem, 4vw, 4rem);
     
 }
 
 .cta-btn{
     background-color: var(--accent-color);
     border-radius: 999px;
-    padding: 1rem 3rem;
-    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: clamp(.8rem, 3vw, 1.2rem);
     font-weight: 800;
 }

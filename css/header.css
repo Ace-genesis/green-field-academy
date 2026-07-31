@@ -15,13 +15,13 @@ header{
 .branding-container{
     display: flex;
     flex-grow: 1;
-    gap: .75rem;
+    gap: clamp(.5rem, 4vw, .75rem);
 
 }
 
 .brand-name{
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
     font-weight: 700;
     line-height: 1;
     color: var(--primary-color)
@@ -30,14 +30,14 @@ header{
 
 .academy-text{
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: clamp(.95rem, 2vw, 1rem);
     font-weight: 600;
     line-height: 1.2;
     color: var(--primary-color)
 }
 
 .motto{
-    font-size: .75rem;
+    font-size: clamp(.65rem, 2vw, .75rem);
     font-weight: 400;
     font-style: italic;
     color: var(--accent-color)
