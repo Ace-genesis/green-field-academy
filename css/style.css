@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Brand Colors */
+    --primary-color: #0F3D2E;
+    --accent-color: #D4AF37;
+    --accent-hover: #B8902F;
+
+    /* Text Colors */
+    --text-color: #1E1E1E;
+    --text-secondary: #6B7280;
+
+    /* Backgrounds */
+    --background-color: #FFFFFF;
+    --light-background: #F4F6F8;
+
+    /* Typography */
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Poppins", sans-serif;
+
+    /* Layout */
+    --container-width: 1200px;
+
+    /* Spacing */
+    --section-padding: 5rem;
+}
+
+body{
+    font-family: var(--font-body);
+    background-color:var(--background-color);
+    color:var(--text-color);
+    overflow-x: hidden;
+}
+
+.container {
+    width: min(92%, 1200px);
+    margin-inline: auto;
+}
+
+.container-wide {
+    width: min(95%, 1400px);
+    margin-inline: auto;
+}
+
+.container-narrow {
+    width: min(90%, 900px);
+    margin-inline: auto;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+.overlay{
+    opacity: 1;
+    transition: .3s;
+    visibility: none;
+}

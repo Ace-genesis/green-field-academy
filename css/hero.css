@@ -1,0 +1,60 @@
+.hero{
+    background: linear-gradient(to right, rgba(0,0,0,.65) 0%,rgba(0, 0, 0, 0) 60% ),
+ url(/assets/images/ChatGPT\ Image\ Jul\ 31\,\ 2026\,\ 09_29_46\ PM.png);
+    background-position: center;
+    background-size: cover;
+    height: calc(100dvh - 5rem);
+    display: flex;
+    position: relative;
+    
+}
+
+.badge{
+    background-color: var(--primary-color);
+    color: white;
+    position: absolute;
+    border-radius: 999px;
+    padding: .8rem 1.2rem;
+    font-weight: 700;
+    top: 2rem;
+    font-size: .8rem;
+}
+
+.hero-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.hero-container{
+    max-width: 500px;
+    width: 100%;
+}
+
+.hero-heading{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-color)
+}
+
+.supporting-text{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.hero-btn-container{
+    min-height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 4rem;
+    
+}
+
+.cta-btn{
+    background-color: var(--accent-color);
+    border-radius: 999px;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
