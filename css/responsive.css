@@ -83,6 +83,8 @@
         overflow-y: hidden;
     }
 
+    
+
  }
  
 
@@ -111,7 +113,21 @@
       background-position: center;
       background-size: cover;
     }
+
+    
     
     
     
  }
+
+
+  @media (max-width: 1000px){
+
+        .choose-section-content{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "image"
+        "text"
+        ;
+    }
+  }
