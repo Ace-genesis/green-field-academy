@@ -1,28 +1,54 @@
+.core-values{
+    background: #f8f9fa;
+}
+
 .values-container{
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding-block: 4rem;
 }
 
-.core-values-heading{
+.core-values-text-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: red;
   text-align: center;
-  font-size: clamp(.8rem, 4vw, 1rem)
   
+  
+}
+
+.core-values-heading{
+    font-size: clamp(.8rem, 4vw, 2rem)
+}
+
+.core-values-text{
+    font-size: clamp(.5rem, 4vw, 1rem)
 }
 
 .value-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
 }
 
 .card{
-  background-color: blue;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1rem;
+  padding: 2rem 0;
+  gap: .8rem;
+
+  h3{
+    color: var(--primary-color);
+  }
+
+  p{
+    text-align: center;
+  }
+}
+
+.core-icon{
+    color: var(--primary-color);
+    font-size: 2rem;
 }

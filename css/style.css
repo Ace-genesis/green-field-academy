@@ -70,3 +70,21 @@ img{
     transition: .3s;
     visibility: none;
 }
+
+.cta-btn{
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 999px;
+    padding: .8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    align-self: center;
+}
+
+.cta-btn:hover{
+    background-color: var(--accent-hover);
+}
+
+.cta-btn:active{
+    transform: scale(.95);
+}

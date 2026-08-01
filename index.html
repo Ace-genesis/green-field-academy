@@ -26,16 +26,22 @@
     
     <link rel="stylesheet" href="/css/values.css">
 
+    <link rel="stylesheet" href="/css/about.css">
+
     <link rel="stylesheet" href="/css/responsive.css">
 
-    <title>Greenfield Academy</title>
+    <link rel="shortcut icon" href="/assets/logos/greenfield-logo.svg" type="image/x-icon">
+
+    <title>Home | Greenfield Academy</title>
 
 </head>
 <body>
     <div class="overlay">
 
     </div>
+
     <!--HEADER/NAVIGATION-->
+
     <header>
         
 
@@ -63,55 +69,59 @@
                     
             </a>
 
-            <nav>
+            <div class="hamburger-menu">
 
-                <ul class="nav-items">
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Academics
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Admissions
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            News & Events
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Gallery
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
+                <nav>
 
-            </nav>
+                    <ul class="nav-items">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Academics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Admissions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                News & Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
 
-            <div class="action-container">
-                <a href="#" class="apply-now-btn">
+                </nav>
 
-                    Apply Now
-                    <i class="fa-solid fa-arrow-right"></i>
+                <div class="action-container">
+                    <a href="#" class="cta-btn">
 
-                </a>
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+                </div>
+
             </div>
 
             
@@ -138,7 +148,7 @@
 
                     </p>
 
-                    <div class="hero-text-container">
+                    <article class="hero-text-container">
                         <h1 class="hero-heading">
 
                         Shaping Tomorrow's Leaders Through Excellence in Education
@@ -150,15 +160,15 @@
 
                         </p>
 
-                    </div>
+                    </article>
 
-                    <div class="hero-btn-container">
+                    <footer class="hero-btn-container">
 
                         <a href="#" class="hero-apply-btn cta-btn">Apply</a>
 
                         <a href="#" class="hero-learn-btn cta-btn">Learn More</a>
 
-                    </div>
+                    </footer>
 
                 </div>
                 
@@ -169,39 +179,39 @@
         
         <!-- CORE VALUES SECTION -->
 
-        <section class="core-value">
+        <section class="core-values">
 
             <div class="container-wide">
 
                 <div class="values-container">
                   
-                  <div class= 'core-values-heading'>
+                    <div class= 'core-values-text-wrapper'>
                     
-                      <h2>
+                        <h2 class="core-values-heading">
 
-                          Our Core Values
+                            Our Core Values
 
-                      </h2>
+                        </h2>
 
-                      <p>
+                        <p class="core-values-text">
 
-                        The Principles       that shape every     student's journey     at Greenfield
+                            The Principles that shape every student's journey at Greenfield
 
-                      </p>
+                        </p>
                     
-                  </div>
+                    </div>
                   
 
                     <div class="value-grid">
 
                         <article class="academic-excellence card">
-                            <i class="fa-solid fa-graduation-cap"></i>
+                            <i class="fa-solid fa-graduation-cap core-icon"></i>
 
-                            <h4>
+                            <h3>
 
                                 Academic Excellence
 
-                            </h4>
+                            </h3>
 
                             <p>
                                 
@@ -211,13 +221,13 @@
                         </article>
 
                         <article class="integrity card">
-                            <i class="fa-solid fa-handshake"></i>
+                            <i class="fa-solid fa-handshake core-icon"></i>
 
-                            <h4>
+                            <h3>
 
                                 Integrity
 
-                            </h4>
+                            </h3>
 
                             <p>
                                 
@@ -227,13 +237,13 @@
                         </article>
 
                         <article class="innovation card">
-                            <i class="fa-solid fa-lightbulb"></i>
+                            <i class="fa-solid fa-lightbulb core-icon"></i>
 
-                            <h4>
+                            <h3>
 
                                 Innovation
 
-                            </h4>
+                            </h3>
 
                             <p>
                                 
@@ -243,13 +253,13 @@
                         </article>
 
                         <article class="leadership card">
-                            <i class="fa-solid fa-user-tie"></i>
+                            <i class="fa-solid fa-user-tie core-icon"></i>
 
-                            <h4>
+                            <h3>
 
                                 Leadership
 
-                            </h4>
+                            </h3>
 
                             <p>
                                 
@@ -267,6 +277,235 @@
             </div>
 
         </section>
+
+        <!-- ABOUT SECTION -->
+         <section class="about-section">
+
+            <div class="container-wide">
+
+                <div class="about-wrapper">
+
+                    <div class="about-section-img">
+                        <img src="/assets/images/about-section-image.png" alt="the-school-building" class="school-building-img">
+                    </div>
+                
+                    <article class="about-content">
+
+                        <h2>
+                            About Greenfield
+                        </h2>
+
+                        <h1>
+                            Inspiring Excellence, Building Character
+                        </h1>
+
+                        <p>
+                            At Greenfield International Academy, we believe that education extends beyond the classroom. Through a balanced curriculum, innovative teaching methods, and a supportive learning environment, we empower every student to discover their strengths and achieve academic excellence.
+                        </p>
+
+                        <p>
+
+                            At Greenfield International Academy, we believe that education extends beyond the classroom. Through a balanced curriculum, innovative teaching methods, and a supportive learning environment, we empower every student to discover their strengths and achieve academic excellence.
+
+                        </p>
+
+                        <ul class="school-features">
+                            <li>Experienced & Passionate Educators</li>
+                            <li>Modern Learning Environment</li>
+                            <li>Holistic Student Development</li>
+                        </ul>
+
+                        <footer class="about-footer">
+
+                            <a class="cta-btn">
+
+                                Learn More
+
+                            </a>
+
+                        </footer>
+
+                    </article>
+
+                </div>
+   
+            </div>
+
+         </section>
+
+         <!-- WHY CHOOSE GREENFIELD ACADEMY SECTION-->
+
+         <section>
+
+            <div class="container-wide">
+
+                <div class="choose-section-wrapper">
+
+                    <article>
+
+                        <section>
+
+                            <h2>
+
+                                Why choose Greenfield
+
+                            </h2>
+
+                            <p>
+                                Choosing the right school is one of the most important decisions for your child's future....
+                            </p>
+
+                        </section>
+
+                        <section>
+
+                            <div class="reasons">
+
+                                <ul>
+
+                                    <li class="features">
+
+                                        <div class="feature-content">
+
+                                            <i class="fa-solid fa-chalkboard-user"></i>
+
+                                            <h3>
+                                                Experienced & Passionate Educators
+                                            </h3>
+                                            <p>
+
+                                                Our dedicated teachers combine expertise, innovation, and personalized support to help every student build confidence, excel academically, and reach their full potential.
+
+                                            </p>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="features">
+
+                                        <div class="feature-content">
+
+                                            <i class="fa-solid fa-school"></i>
+
+                                            <h3>
+                                                Modern Learning Environment
+                                            </h3>
+                                            <p>
+
+                                                Bright classrooms, well-equipped science laboratories, digital learning resources, and engaging spaces create an inspiring environment where students love to learn.
+
+                                            </p>
+
+                                        </div>
+
+                                    </li>
+                                    
+                                    <li class="features">
+
+                                        <div class="feature-content">
+
+                                            <i class="fa-solid fa-shield-heart"></i>
+
+                                            <h3>
+                                                Safe & Supportive Community
+                                            </h3>
+                                            <p>
+
+                                                We foster a secure, inclusive, and caring atmosphere where every child feels valued, respected, and encouraged to grow with confidence.
+
+                                            </p>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="features">
+
+                                        <div class="feature-content">
+
+                                            <i class="fa-solid fa-seedling"></i>
+
+                                            <h3>
+                                                Holistic Student Development
+                                            </h3>
+                                            <p>
+
+                                                Beyond academics, we nurture leadership, creativity, teamwork, and strong character through sports, arts, clubs, and extracurricular activities.
+
+                                            </p>
+
+                                        </div>
+
+                                    </li>
+                                    
+                                    <li class="features">
+
+                                        <div class="feature-content">
+
+                                            <i class="fa-solid fa-laptop-code"></i>
+
+                                            <h3>
+                                                Technology-Enhanced Learning
+                                            </h3>
+                                            <p>
+
+                                                Our classrooms integrate modern educational technology to promote collaboration, critical thinking, and the digital skills students need for the future.
+
+                                            </p>
+
+                                        </div>
+
+                                    </li>
+                                    
+                                    <li class="features">
+
+                                        <div class="feature-content">
+
+                                            <i class="fa-solid fa-user-graduate"></i>
+
+                                            <h3>
+                                                Personalized Learning Approach
+                                            </h3>
+                                            <p>
+
+                                                With small class sizes and individualized attention, every learner receives the guidance and encouragement needed to thrive both academically and personally.
+
+                                            </p>
+
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="student-imgs">
+
+                                <img src="/assets/images/why-choose-section-image.png" alt="picture-of-students-in-chemistry-lab">
+
+                            </div>
+
+                        </section>
+
+                        <footer>
+
+                            <a href="#" class="cta-btn">
+
+                                Learn More
+
+                            </a>
+
+                        </footer>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+         </section>
     </main>
     <script type="module" src="/js/script.js"></script>
 </body>
