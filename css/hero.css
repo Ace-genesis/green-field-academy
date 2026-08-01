@@ -10,13 +10,12 @@
 }
 
 .badge{
+    display: inline-block;
     background-color: var(--primary-color);
     color: white;
     border-radius: 999px;
     padding: .8rem 1.2rem;
     font-weight: 700;
-    max-width: 150px;
-    width: 100%;
     font-size: clamp(.5rem, 2vw, .8rem);
     margin-bottom: 2rem;
 }
