@@ -1,0 +1,74 @@
+.academic-section{
+    padding-block: 4rem;
+}
+
+.academic-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.academic-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+}
+
+.horizontal-card{
+    display: flex;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(15, 93, 58, 0.123);
+    transition: .3s ease-in-out
+}
+
+.horizontal-card:nth-child(odd) .horizontal-card-text{
+    order: 2
+}
+
+.horizontal-card:nth-child(odd) .horizontal-card-img{
+    order: 1
+}
+
+.horizontal-card:hover{
+    transform: translateY(-5px);
+
+    box-shadow:0 18px 40px rgba(0, 0, 0, 0.205);
+}
+
+.horizontal-card-text{
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+
+    h3{
+        font-size: clamp(1.2rem, 3vw, 2rem)
+    }
+
+    p{
+        font-size: clamp(.85rem, 2vw, 1.2rem);
+    }
+}
+
+
+.horizontal-card-img{
+    min-height:320px;
+}
+
+.academic-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 1rem;
+}
+
+.academic-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

@@ -1,6 +1,6 @@
 .why-choose-section{
-    background-color: red;
     padding-block: 4rem;
+    background:#f8faf8;
 }
 
 .choose-section-wrapper{
@@ -21,7 +21,6 @@
 
     p{
         font-size: clamp(.9rem, 3vw, 1.5rem);
-        width: 35ch;
     }
 
 
@@ -30,21 +29,13 @@
 .choose-section-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-    grid-template-areas:
-     "text image";
 }
 
-.reasons{
-    background-color: pink;
-    grid-area: text;
-}
 
 .student-img-container{
-    background-color: purple;
     display: flex;
     align-items: center;
-    grid-area: image
+    justify-content: center;
 }
 
 .lab-img{
@@ -60,6 +51,9 @@
 .features{
     border-bottom: 1px solid #e5e5e5;
     padding-block: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
     i{
         font-size: 2rem;

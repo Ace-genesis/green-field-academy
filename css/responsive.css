@@ -121,13 +121,19 @@
  }
 
 
-  @media (max-width: 1000px){
+  @media (max-width: 600px){
 
-        .choose-section-content{
+    .horizontal-card{
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "image"
-        "text"
-        ;
     }
+
+    .horizontal-card:nth-child(even) .horizontal-card-text{
+        order: 2
+    }
+
+    .horizontal-card:nth-child(even) .horizontal-card-img{
+        order: 1
+    }
+        
   }

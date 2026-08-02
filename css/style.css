@@ -79,6 +79,8 @@ img{
     font-size: 1rem;
     font-weight: 600;
     align-self: center;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .cta-btn:hover{
