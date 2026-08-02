@@ -5,6 +5,12 @@ header{
     background-color: var(--light-background);
 }
 
+.header-container{
+    position: sticky;
+    top: 0;
+    z-index: 300;
+}
+
 .header{
     display: flex;
     align-items: center;
