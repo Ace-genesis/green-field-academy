@@ -7,9 +7,6 @@ const showHeader = () => {
     const hamMenu = document.querySelector('.hamburger-menu')
     const body = document.body;
 
-    console.log(overlay)
-    console.log(hamMenu)
-    console.log(hamburger)
 
     hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active')
@@ -44,3 +41,15 @@ async function getHeader() {
 }
 
 getHeader()
+
+async function getFooter(){
+    const result = await fetch('footer.html')
+    const data = await result.text();
+
+    const pageFooter = document.querySelector('.page-footer')
+
+    pageFooter.innerHTML = data
+    console.log(data)
+}
+
+getFooter();

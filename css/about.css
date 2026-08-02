@@ -1,3 +1,8 @@
+/* =====================
+    HOME PAGE DESIGN 
+===========================*/
+
+
 .about-section{
     padding-block: 4rem;
 }
@@ -59,4 +64,425 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+}
+
+
+
+/* ====================
+    ABOUT PAGE DESIGN
+   ==================== */
+
+    .page-title{
+        padding-block: 10rem 8rem;
+        background: linear-gradient(
+        rgba(8, 59, 42, .70),
+        rgba(8, 59, 42, .70)
+    ), url("/assets/images/about-hero.png");
+        background-position: center;
+        background-size: cover;
+        position:relative;
+
+        isolation:isolate;
+    }
+
+   .page-title-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    margin-inline: auto;
+    color: white;
+
+        h1{
+
+            font-size:clamp(2.5rem,6vw,4rem);
+
+            line-height:1.1;
+
+            max-width:12ch;
+
+        }
+
+        h2{
+            font-size:.95rem;
+
+            letter-spacing:.25rem;
+
+            text-transform:uppercase;
+
+            color:var(--accent-color);
+        }
+   }
+
+
+   .home-about{
+        display:flex;
+
+        gap:.75rem;
+
+        align-items:center;
+
+        margin-top:2rem;
+
+        p{
+            color:rgba(255,255,255,.85);
+        }
+
+        a{
+
+            color:white;
+
+            font-weight:500;
+
+        }
+
+   }
+
+
+/* ======================
+    OUR STORY SECTION
+============================*/
+
+   .our-story-section{
+    padding-block: 7rem;
+}
+
+.about-story-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* ---------- Header ---------- */
+
+.about-story-header{
+    max-width: 700px;
+    margin-inline: auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.about-story-header h2{
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.about-story-header p{
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+/* ---------- Body ---------- */
+
+.about-story-body{
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* ---------- Image ---------- */
+
+.our-story-img-container{
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.our-story-img-container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* ---------- Story ---------- */
+
+.our-story-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.our-story-text-container p{
+    line-height: 1.9;
+    color: var(--text-light);}
+
+
+
+/* =========================================
+   MISSION | VISION | VALUES
+========================================= */
+
+.mission-section{
+    padding-block: 7rem;
+    background: #fafafa;
+}
+
+.mission-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.mission-header{
+    max-width: 700px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.mission-header h2{
+    font-size: clamp(2rem,4vw,3rem);
+    margin-bottom: 1rem;
+}
+
+.mission-header p{
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:2rem;
+}
+
+.mission-card{
+    background:white;
+    padding:3rem 2rem;
+    border-radius:1rem;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+
+    transition:.3s;
+}
+
+.mission-card:hover{
+    transform:translateY(-8px);
+}
+
+.mission-card i{
+    font-size:2.5rem;
+    color:var(--accent-color);
+}
+
+.mission-card p{
+    line-height:1.8;
+}
+
+
+
+
+/* =========================================
+   EDUCATION BEYOND THE CLASSROOM
+========================================= */
+
+.education-section{
+    padding-block:7rem;
+}
+
+.education-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:4rem;
+    align-items:center;
+}
+
+.education-content{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+.education-content h2{
+    font-size:clamp(2rem,4vw,3rem);
+}
+
+.education-content p{
+    line-height:1.8;
+}
+
+.education-content ul{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(150px,1fr));
+    gap:1rem;
+
+    list-style:none;
+    padding:0;
+}
+
+.education-content li{
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+}
+
+.education-content li::before{
+    content:"✓";
+    color:var(--accent-color);
+    font-weight:bold;
+}
+
+.education-image{
+    overflow:hidden;
+    border-radius:1rem;
+}
+
+.education-image img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+
+
+
+/* =========================================
+   FACILITIES
+========================================= */
+
+.facilities-section{
+    padding-block:7rem;
+    background:#fafafa;
+}
+
+.facilities-header{
+    text-align:center;
+    max-width:700px;
+    margin-inline:auto;
+    margin-bottom:4rem;
+}
+
+.facilities-header h2{
+    font-size:clamp(2rem,4vw,3rem);
+    margin-bottom:1rem;
+}
+
+.facilities-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:2rem;
+}
+
+.facilities-grid article{
+    background:white;
+    border-radius:1rem;
+    overflow:hidden;
+
+    transition:.3s;
+}
+
+.facilities-grid article:hover{
+    transform:translateY(-8px);
+}
+
+.facilities-grid img{
+    width:100%;
+    aspect-ratio:4/3;
+    object-fit:cover;
+}
+
+.facilities-grid h3{
+    padding:1.5rem;
+    text-align:center;
+}
+
+
+
+/* =========================================
+   LEADERSHIP
+========================================= */
+
+.leadership-section{
+    padding-block:7rem;
+}
+
+.leadership-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+}
+
+.leadership-wrapper header{
+    text-align:center;
+    max-width:700px;
+    margin-inline:auto;
+}
+
+.leadership-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:2rem;
+}
+
+.leader-card{
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.leader-card img{
+    width:220px;
+    aspect-ratio:1;
+    object-fit:cover;
+    border-radius:50%;
+    margin-inline:auto;
+}
+
+.leader-card h4{
+    color:var(--accent-color);
+}
+
+.leader-card p{
+    line-height:1.8;
+}
+
+
+
+/* =========================================
+   TRUST
+========================================= */
+
+.trust-section{
+    padding-block:7rem;
+    background:#083b2a;
+    color:white;
+}
+
+.trust-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+}
+
+.trust-wrapper header{
+    text-align:center;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:2rem;
+}
+
+.trust-grid article{
+    text-align:center;
+}
+
+.trust-grid h3{
+    font-size:clamp(3rem,6vw,4rem);
+    color:var(--accent-color);
+}
+
+.trust-grid p{
+    margin-top:1rem;
+    line-height:1.7;
 }
