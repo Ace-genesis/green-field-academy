@@ -72,3 +72,438 @@
     flex-direction: column;
     gap: 2rem;
 }
+
+
+
+/* =========================
+    ACADEMICS PAGE DESIGN
+===============================*/
+
+.academics{
+
+    padding-block:10rem 8rem;
+
+    background:
+    linear-gradient(
+    rgba(8,59,42,.75),
+    rgba(8,59,42,.75)
+    ),
+    url(/assets/images/academics-hero.png);
+
+    background-position:center;
+    background-size:cover;
+}
+
+
+/*==========================================
+ACADEMIC EXCELLENCE
+==========================================*/
+
+.academic-excellence-section{
+
+    padding-block:7rem;
+
+}
+
+.academic-excellence-wrapper{
+
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:4rem;
+    align-items:center;
+
+}
+
+.academic-excellence-image{
+
+    overflow:hidden;
+    border-radius:1rem;
+
+}
+
+.academic-excellence-image img{
+
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+
+}
+
+.academic-excellence-content{
+
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+
+}
+
+.academic-excellence-content h2{
+
+    font-size:clamp(2rem,4vw,3rem);
+
+}
+
+.academic-excellence-content p{
+
+    line-height:1.9;
+    color:var(--text-light);
+
+}
+
+
+/*==========================================
+CURRICULUM
+==========================================*/
+
+.curriculum-section{
+
+    padding-block:7rem;
+    background:#fafafa;
+
+}
+
+.curriculum-wrapper{
+
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+
+}
+
+.curriculum-header{
+
+    text-align:center;
+    max-width:700px;
+    margin-inline:auto;
+
+}
+
+.curriculum-header h2{
+
+    font-size:clamp(2rem,4vw,3rem);
+    margin-bottom:1rem;
+
+}
+
+.curriculum-header p{
+
+    line-height:1.8;
+
+}
+
+.curriculum-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:2rem;
+
+}
+
+.curriculum-card{
+
+    background:white;
+    padding:3rem 2rem;
+    border-radius:1rem;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+
+    transition:.3s;
+
+}
+
+.curriculum-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.curriculum-card i{
+
+    font-size:2.5rem;
+    color:var(--accent-color);
+
+}
+
+.curriculum-card p{
+
+    line-height:1.8;
+
+}
+
+
+
+/*==========================================
+SUBJECTS
+==========================================*/
+
+.subjects-section{
+
+    padding-block:7rem;
+
+}
+
+.subjects-wrapper{
+
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+
+}
+
+.subjects-header{
+
+    text-align:center;
+    max-width:700px;
+    margin-inline:auto;
+
+}
+
+.subjects-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:2rem;
+
+}
+
+.subjects-grid article{
+
+    background:white;
+    border-radius:1rem;
+    padding:2rem;
+
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+.subjects-grid i{
+
+    font-size:2rem;
+    color:var(--accent-color);
+
+}
+
+
+
+/*==========================================
+BEYOND THE CLASSROOM
+==========================================*/
+
+.beyond-classroom-section{
+
+    padding-block:7rem;
+    background:#fafafa;
+
+}
+
+.beyond-classroom-wrapper{
+
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:4rem;
+    align-items:center;
+
+}
+
+.beyond-classroom-content{
+
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+
+}
+
+.beyond-classroom-content h2{
+
+    font-size:clamp(2rem,4vw,3rem);
+
+}
+
+.beyond-classroom-content p{
+
+    line-height:1.9;
+
+}
+
+.beyond-classroom-content ul{
+
+    list-style:none;
+
+    display:grid;
+    grid-template-columns:repeat(2,minmax(180px,1fr));
+
+    gap:1rem;
+
+    padding:0;
+
+}
+
+.beyond-classroom-content li{
+
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+
+}
+
+.beyond-classroom-content li::before{
+
+    content:"✓";
+    color:var(--accent-color);
+    font-weight:bold;
+
+}
+
+.beyond-classroom-image{
+
+    overflow:hidden;
+    border-radius:1rem;
+
+}
+
+.beyond-classroom-image img{
+
+    width:100%;
+    display:block;
+    object-fit:cover;
+
+}
+
+
+/*==========================================
+LEARNING RESOURCES
+==========================================*/
+
+.resources-section{
+
+    padding-block:7rem;
+
+}
+
+.resources-wrapper{
+
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+
+}
+
+.resources-header{
+
+    text-align:center;
+    max-width:700px;
+    margin-inline:auto;
+
+}
+
+.resources-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:2rem;
+
+}
+
+.resource-card{
+
+    background:white;
+    border-radius:1rem;
+    padding:2.5rem;
+
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+.resource-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.resource-card i{
+
+    font-size:2.3rem;
+    color:var(--accent-color);
+
+}
+
+.resource-card p{
+
+    line-height:1.8;
+
+}
+
+
+/*==========================================
+STUDENT SUCCESS
+==========================================*/
+
+.student-success-section{
+
+    padding-block:7rem;
+    background:var(--primary-color);
+    color:white;
+
+}
+
+.student-success-wrapper{
+
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+
+}
+
+.student-success-header{
+
+    text-align:center;
+    max-width:700px;
+    margin-inline:auto;
+
+}
+
+.student-success-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:2rem;
+
+}
+
+.student-success-grid article{
+
+    text-align:center;
+
+}
+
+.student-success-grid h3{
+
+    font-size:clamp(3rem,6vw,4rem);
+    color:var(--accent-color);
+
+}
+
+.student-success-grid p{
+
+    margin-top:1rem;
+    line-height:1.7;
+
+}
