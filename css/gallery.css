@@ -1,0 +1,246 @@
+/*=====================================
+GALLERY INTRO
+=====================================*/
+
+.gallery-hero{
+    padding-block:10rem 8rem;
+
+    background:
+    linear-gradient(
+    rgba(8,59,42,.75),
+    rgba(8,59,42,.75)
+    ),
+    url("/assets/images/gallery-hero.png");
+
+    background-position:center;
+    background-size:cover;
+}
+
+
+.gallery-intro-section{
+
+    padding:6rem 0;
+
+}
+
+.gallery-intro{
+
+    text-align:center;
+
+    max-width:750px;
+
+    margin:auto;
+
+}
+
+.gallery-intro h2{
+
+    margin-bottom:1rem;
+
+}
+
+.gallery-intro p{
+
+    line-height:1.8;
+
+}
+
+
+
+/*=====================================
+GALLERY SECTIONS
+=====================================*/
+
+.gallery-section{
+
+    padding:6rem 0;
+
+}
+
+.gallery-section:nth-child(even){
+
+    background:#f8f9fa;
+
+}
+
+.section-header{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:0 auto 4rem;
+
+}
+
+.section-header h2{
+
+    margin-bottom:1rem;
+
+}
+
+
+
+/*=====================================
+IMAGE GALLERY
+=====================================*/
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:1.5rem;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:1rem;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+
+/*=====================================
+VIDEO HIGHLIGHTS
+=====================================*/
+
+.video-section{
+
+    background:#f8f9fa;
+
+    padding:6rem 0;
+
+}
+
+.video-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+.video-card{
+
+    background:#fff;
+
+    border-radius:1rem;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.video-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.video-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.video-content{
+
+    padding:1.5rem;
+
+    text-align:center;
+
+}
+
+.video-content h3{
+
+    margin:0;
+
+}
+
+
+
+/*=====================================
+CAMPUS TOUR
+=====================================*/
+
+.campus-tour-section{
+
+    padding:6rem 0;
+
+}
+
+.campus-tour{
+
+    background:var(--primary-color);
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:4rem;
+
+    border-radius:1.5rem;
+
+}
+
+.campus-tour h2{
+
+    color:#fff;
+
+    margin-bottom:1rem;
+
+}
+
+.campus-tour p{
+
+    max-width:700px;
+
+    margin:0 auto 2rem;
+
+    line-height:1.8;
+
+}
+
+.campus-tour-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+}
