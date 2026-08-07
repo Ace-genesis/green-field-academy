@@ -27,7 +27,7 @@
     gap: 1rem;
 }
 
-.news-card{
+.news-card-home{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -154,7 +154,7 @@
     transition:.3s;
 }
 
-.news-card:hover .card-btn i{
+.news-card-home:hover .card-btn i{
     transform:translateX(5px);
 }
 
