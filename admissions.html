@@ -470,37 +470,280 @@
 
     </section>
 
-    <section class="apply-section">
+    <section class="admission-form-section" id="admission-form">
 
-        <div class="container-narrow">
+        <div class="container-wide">
 
-            <article class="apply-wrapper">
+            <article class="admission-form-wrapper">
 
-                <h2>
+                <header class="admission-form-header">
 
-                    Ready to Begin Your Greenfield Journey?
+                    <h2>
+                        Ready to Begin Your Greenfield Journey?
+                    </h2>
 
-                </h2>
+                    <p>
+                        Complete the admission form below and our admissions team will contact you with the next steps in the admission process.
+                    </p>
 
-                <p>
+                </header>
 
-                    We look forward to welcoming your family into a community where excellence, character, and opportunity come together to shape future leaders.
+                <form id="admission-form">
 
-                </p>
+                    <!-- Parent Information -->
 
-                <div class="apply-buttons">
+                    <fieldset>
 
-                    <a href="application.html" class="admission-cta-btn">
+                        <legend>Parent / Guardian Information</legend>
 
-                        Apply Now
+                        <div class="form-grid">
 
-                    </a>
+                            <div class="form-group">
 
-                    <a href="#" class="admission-cta-btn clear">
+                                <label for="parent-name">Full Name *</label>
 
-                        Download Admission Form
+                                <input
+                                    type="text"
+                                    id="parent-name"
+                                    name="parent-name"
+                                    required>
 
-                    </a>
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="relationship">Relationship *</label>
+
+                                <select
+                                    id="relationship"
+                                    name="relationship"
+                                    required>
+
+                                    <option value="">Select</option>
+                                    <option>Father</option>
+                                    <option>Mother</option>
+                                    <option>Guardian</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="email">Email Address *</label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="phone">Phone Number *</label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Student Information -->
+
+                    <fieldset>
+
+                        <legend>Student Information</legend>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="student-name">Student Full Name *</label>
+
+                                <input
+                                    type="text"
+                                    id="student-name"
+                                    name="student-name"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="gender">Gender *</label>
+
+                                <select
+                                    id="gender"
+                                    name="gender"
+                                    required>
+
+                                    <option value="">Select</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="dob">Date of Birth *</label>
+
+                                <input
+                                    type="date"
+                                    id="dob"
+                                    name="dob"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="class-applying">Class Applying For *</label>
+
+                                <select
+                                    id="class-applying"
+                                    name="class-applying"
+                                    required>
+
+                                    <option value="">Select</option>
+                                    <option>Nursery 1</option>
+                                    <option>Nursery 2</option>
+                                    <option>Kindergarten</option>
+                                    <option>Primary 1</option>
+                                    <option>Primary 2</option>
+                                    <option>Primary 3</option>
+                                    <option>Primary 4</option>
+                                    <option>Primary 5</option>
+                                    <option>Primary 6</option>
+                                    <option>JSS 1</option>
+                                    <option>JSS 2</option>
+                                    <option>JSS 3</option>
+                                    <option>SS 1</option>
+                                    <option>SS 2</option>
+                                    <option>SS 3</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="previous-school">Previous School</label>
+
+                            <input
+                                type="text"
+                                id="previous-school"
+                                name="previous-school">
+
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Home Address -->
+
+                    <fieldset>
+
+                        <legend>Home Address</legend>
+
+                        <div class="form-group">
+
+                            <label for="address">Residential Address *</label>
+
+                            <textarea
+                                id="address"
+                                name="address"
+                                rows="4"
+                                required></textarea>
+
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Additional Information -->
+
+                    <fieldset>
+
+                        <legend>Additional Information</legend>
+
+                        <div class="form-group">
+
+                            <label for="medical-information">
+
+                                Medical Conditions / Allergies (Optional)
+
+                            </label>
+
+                            <textarea
+                                id="medical-information"
+                                name="medical-information"
+                                rows="4"></textarea>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="additional-notes">
+
+                                Additional Notes (Optional)
+
+                            </label>
+
+                            <textarea
+                                id="additional-notes"
+                                name="additional-notes"
+                                rows="4"></textarea>
+
+                        </div>
+
+                    </fieldset>
+
+                    <div class="form-checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="agreement"
+                            required>
+
+                        <label for="agreement">
+
+                            I confirm that all information provided is true and accurate.
+
+                        </label>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="admission-cta-btn">
+
+                        Submit Admission Application
+
+                    </button>
+
+                </form>
+
+                <div class="form-message" id="form-message">
+
+                    Your application has been submitted successfully. Our admissions team will contact you soon.
 
                 </div>
 

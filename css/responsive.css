@@ -333,3 +333,22 @@ RESPONSIVE
     }
 
 }
+
+
+.admission-form-wrapper{
+
+        padding: 2rem;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns: 1fr;
+
+    }
+
+    #admission-form fieldset{
+
+        padding: 1.5rem;
+
+    }

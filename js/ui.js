@@ -1,4 +1,5 @@
-
+import { initAdmissionForm } from './admission.js';
+import { initContactForm } from './contact.js';
 
 const showHeader = () => {
 
@@ -53,3 +54,17 @@ async function getFooter(){
 }
 
 getFooter();
+
+
+async function init() {
+
+    await getHeader();
+
+    await getFooter();
+
+    initAdmissionForm();
+    initContactForm();
+
+}
+
+init();
