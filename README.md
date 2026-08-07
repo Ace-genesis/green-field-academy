@@ -92,6 +92,8 @@ greenfield-academy/
 ├── news.html
 ├── gallery.html
 ├── contact.html
+├── header.html  
+├── footer.html         
 │
 ├── css/
 │   ├── style.css
@@ -108,6 +110,8 @@ greenfield-academy/
 ├── js/
 │   └── script.js
 │   └── ui.js
+│   └── admission.js
+│   └── contact.js
 │
 ├── assets/
 │   ├── images/
